@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>木工マスターガイド：作業のポイント集</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://shiftthefuture7-dot.github.io/Material-and-processing-technology/A.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+  }
+
+  h1 {
+    background-color: rgba(255, 192, 203, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #800040;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  }
+
+  .sub-buttons {
+    display: none; /* 初期状態で非表示 */
+    margin-top: 10px;
+  }
+
+  .sub-button {
+    margin: 3px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    border: none;
+  }
+
+  #videoContainer {
+    margin-top: 20px;
+  }
+
+  iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border: 3px solid #f3aecc;
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+
+<h1>木工マスターガイド：作業のポイント集</h1>
+
+<!-- 親ボタン -->
+<div>
+  <button class="button" style="background-color:#f3aecc;" onclick="showSubButtons('kegaki')">けがき</button>
+  <button class="button" style="background-color:#ff7f50;" onclick="showSubButtons('setsudan')">切断</button>
+  <button class="button" style="background-color:#6a5acd;" onclick="showSubButtons('sessaku')">切削</button>
+  <button class="button" style="background-color:#3cb371;" onclick="showSubButtons('anaake')">穴あけ</button>
+  <button class="button" style="background-color:#ffa500;" onclick="showSubButtons('kumiawase')">組み立て</button>
+  <button class="button" style="background-color:#40e0d0;" onclick="showSubButtons('tosou')">塗装</button>
+</div>
+
+<!-- 詳細ボタン -->
+<div id="kegaki" class="sub-buttons">
+  <button class="sub-button" style="background-color:#f08080;" onclick="playVideo('dbIQ4J_ekxU', 12)">②けがきについての確認</button>
+  <button class="sub-button" style="background-color:#f08080;" onclick="playVideo('dbIQ4J_ekxU', 19)">③例で製作する製品の設計図</button>
+  <button class="sub-button" style="background-color:#f08080;" onclick="playVideo('dbIQ4J_ekxU', 31)">④部品③のけがき</button>
+  <button class="sub-button" style="background-color:#f08080;" onclick="playVideo('dbIQ4J_ekxU', 80)">⑤部品④⑤のけがき</button>
+  <button class="sub-button" style="background-color:#f08080;" onclick="playVideo('dbIQ4J_ekxU', 125)">⑥縦横両方切るパターンのけがき</button>
+</div>
+
+<div id="setsudan" class="sub-buttons">
+  <button class="sub-button" style="background-color:#ff6347;" onclick="playVideo('uOtrb4q8EV4', 12)">②部品③の切り出し</button>
+  <button class="sub-button" style="background-color:#ff6347;" onclick="playVideo('uOtrb4q8EV4', 63)">③部品④⑤の切り出し</button>
+</div>
+
+<div id="sessaku" class="sub-buttons">
+  <button class="sub-button" style="background-color:#9370db;" onclick="playVideo('zMmdewj2hnA', 20)">②表面を整える</button>
+  <button class="sub-button" style="background-color:#9370db;" onclick="playVideo('zMmdewj2hnA', 39)">③複数の板の寸法を揃える</button>
+  <button class="sub-button" style="background-color:#9370db;" onclick="playVideo('zMmdewj2hnA', 60)">④寸法を揃えるための仕上がり寸法線をひく場合</button>
+</div>
+
+<div id="anaake" class="sub-buttons">
+  <button class="sub-button" style="background-color:#3cb371;" onclick="playVideo('kDoQxKtjcZo', 12)">②穴あけの確認</button>
+  <button class="sub-button" style="background-color:#3cb371;" onclick="playVideo('kDoQxKtjcZo', 21)">③穴あけのけがき</button>
+  <button class="sub-button" style="background-color:#3cb371;" onclick="playVideo('kDoQxKtjcZo', 140)">④ボール盤での穴あけ</button>
+  <button class="sub-button" style="background-color:#3cb371;" onclick="playVideo('kDoQxKtjcZo', 180)">⑤穴あけ後の細かい作業</button>
+</div>
+
+<div id="kumiawase" class="sub-buttons">
+  <button class="sub-button" style="background-color:#ffa500;" onclick="playVideo('h6MrqGDMJH4', 13)">②一人で組み立てる場合の固定方法</button>
+  <button class="sub-button" style="background-color:#ffa500;" onclick="playVideo('h6MrqGDMJH4', 52)">③組み立て完了までの手順</button>
+  <button class="sub-button" style="background-color:#ffa500;" onclick="playVideo('h6MrqGDMJH4', 142)">④製品と合わせて穴をあける</button>
+  <button class="sub-button" style="background-color:#ffa500;" onclick="playVideo('h6MrqGDMJH4', 165)">⑤表面の仕上げ</button>
+</div>
+
+<div id="tosou" class="sub-buttons">
+  <button class="sub-button" style="background-color:#40e0d0;" onclick="playVideo('lNMqLhPrk8w', 13)">②塗装の準備</button>
+  <button class="sub-button" style="background-color:#40e0d0;" onclick="playVideo('lNMqLhPrk8w', 42)">③実際の塗装</button>
+</div>
+
+<div id="videoContainer">
+  <iframe id="videoPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<script>
+function showSubButtons(section) {
+  // すべての詳細ボタンを非表示に
+  document.querySelectorAll('.sub-buttons').forEach(div => div.style.display = 'none');
+  // 選択した詳細ボタンを表示
+  const target = document.getElementById(section);
+  if (target) target.style.display = 'block';
+}
+
+function playVideo(videoId, start) {
+  document.getElementById('videoPlayer').src = `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${start}`;
+}
+</script>
+
+</body>
+</html>
