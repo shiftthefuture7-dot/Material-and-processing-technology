@@ -24,17 +24,20 @@
     color: #800040;
   }
 
-  .button {
-    display: inline-block;
-    padding: 14px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 18px;
-    color: white;
-    min-width: 100px;
-  }
+ .button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid white; /* 白い縁を追加 */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-clip: padding-box; /* ボーダーと背景が重ならないように */
+}
+.button:hover {
+  box-shadow: 0 0 8px 2px white;
+}
+
 
   .sub-buttons {
     display: none;
